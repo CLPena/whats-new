@@ -1,22 +1,30 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
 import './App.css';
+import NewsContainer from '../NewsContainer/NewsContainer'
+// import NewsArticle from '../NewsArticle/NewsArticle'
+
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      localNews: local
     }
   }
 
   render () {
     return (
       <div className="app">
-        YOUR CODE GOES HERE!
+        <NewsContainer localNews={this.state.localNews} />
       </div>
     );
   }
 }
+
+//       {users.map(user => (
+      //   <Tweet name={user.name} message={user.message} likes={user.likes} />
+      // ))}
 
 export default App;
