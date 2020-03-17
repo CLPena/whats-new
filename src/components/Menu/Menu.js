@@ -1,6 +1,12 @@
 import React from 'react';
 import './Menu.css'
 
-// MENU COMPONENT CODE GOES HERE
+const Menu = () => {
+    return (
+      <nav className="menu">
+      </nav>
+    )
+};
+
 
 export default Menu;

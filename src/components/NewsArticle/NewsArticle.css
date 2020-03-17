@@ -15,3 +15,7 @@ p, h2 {
   height: 100px;
   width: auto;
 }
+
+a {
+  color: yellow;
+}
