@@ -10,17 +10,21 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      localNews: local
     }
   }
 
   render () {
     return (
       <div className="app">
-        <NewsContainer />
+        <NewsContainer localNews={this.state.localNews} />
       </div>
     );
   }
 }
+
+//       {users.map(user => (
+      //   <Tweet name={user.name} message={user.message} likes={user.likes} />
+      // ))}
 
 export default App;

@@ -2,11 +2,11 @@ import React from 'react';
 import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle'
 
-const NewsContainer = () => {
+const NewsContainer = (props) => {
   return (
     <div className="news-container">
-      <p>FROM CONTAINER</p>
-      <NewsArticle />
+      <h1>Local News</h1>
+      <NewsArticle localNews={props.localNews}/>
     </div>
   );
 };
