@@ -1,0 +1,28 @@
+.menu {
+  height: 100vh;
+  width: 20%;
+  margin: 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0;
+  position: fixed;
+}
+
+.menu-button {
+  width: 100%;
+  height: 4em;
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: rgb(237, 237, 68);
+  font-size: 1.15em;
+}
+
+.active-button, .menu-button:hover {
+  background: rgba(237, 237, 68, 0.65);
+  color: #141527;
+}
+
+.menu-header {
+  margin: 20px 0;
+}
