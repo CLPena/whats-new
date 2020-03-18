@@ -16,7 +16,8 @@ class App extends Component {
       entertainmentNews: entertainment,
       healthNews: health,
       scienceNews: science,
-      technologyNews: technology
+      technologyNews: technology,
+      category: ""
     }
   }
 
@@ -28,6 +29,7 @@ class App extends Component {
         healthNews={this.state.healthNews}
         scienceNews={this.state.scienceNews}
         technologyNews={this.state.technologyNews}
+        category=""
         />
       </div>
     );

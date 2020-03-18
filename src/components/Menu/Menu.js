@@ -15,13 +15,16 @@ class Menu extends Component {
       entertainmentNews: entertainment,
       healthNews: health,
       scienceNews: science,
-      technologyNews: technology
+      technologyNews: technology,
+      category: ""
     }
   }
 
   handleMenuButtons = (event) => {
+    this.category = event.target.id;
     event.preventDefault();
-    NewsArticle(this.state, event.target.id);
+    NewsArticle(this.state);
+    //need to change category on highest level and communicate change back down!
   }
 
   render () {
