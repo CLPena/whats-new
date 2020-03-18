@@ -15,11 +15,11 @@
   background: transparent;
   border: none;
   color: rgb(237, 237, 68);
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
-.menu-button:hover {
-  background: rgba(237, 237, 68, 0.5);
+.active-button, .menu-button:hover {
+  background: rgba(237, 237, 68, 0.65);
   color: #141527;
 }
 
