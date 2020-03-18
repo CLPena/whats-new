@@ -5,7 +5,7 @@ import NewsArticle from '../NewsArticle/NewsArticle'
 const NewsContainer = (props) => {
   return (
     <div className="news-container">
-      <h1>Local News</h1>
+      <h1>LOCAL NEWS:</h1>
       <NewsArticle localNews={props.localNews}/>
     </div>
   );
