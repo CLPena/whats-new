@@ -5,13 +5,13 @@ import NewsArticle from '../NewsArticle/NewsArticle'
 const NewsContainer = (props) => {
   return (
     <div className="news-container">
-      <h1>LOCAL NEWS:</h1>
+      <h1>LOCAL:</h1>
       <NewsArticle localNews={props.localNews}
       entertainmentNews={props.entertainmentNews}
       healthNews={props.healthNews}
       scienceNews={props.scienceNews}
       technologyNews={props.technologyNews}
-      category=""/>
+      category={props.category}/>
     </div>
   );
 };

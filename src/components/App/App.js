@@ -21,15 +21,19 @@ class App extends Component {
     }
   }
 
+  changeDisplay = (category) => {
+    this.setState({category: category});
+  }
+
   render () {
     return (
       <div className="app">
-        <Menu />
+        <Menu changeDisplay={this.changeDisplay}/>
         <NewsContainer localNews={this.state.localNews} entertainmentNews={this.state.entertainmentNews}
         healthNews={this.state.healthNews}
         scienceNews={this.state.scienceNews}
         technologyNews={this.state.technologyNews}
-        category=""
+        category={this.state.category}
         />
       </div>
     );
