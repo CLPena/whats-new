@@ -12,11 +12,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      localNews: local,
-      entertainmentNews: entertainment,
-      healthNews: health,
-      scienceNews: science,
-      technologyNews: technology,
+      local: local,
+      entertainment: entertainment,
+      health: health,
+      science: science,
+      technology: technology,
       category: ""
     }
   }
@@ -29,10 +29,10 @@ class App extends Component {
     return (
       <div className="app">
         <Menu changeDisplay={this.changeDisplay}/>
-        <NewsContainer localNews={this.state.localNews} entertainmentNews={this.state.entertainmentNews}
-        healthNews={this.state.healthNews}
-        scienceNews={this.state.scienceNews}
-        technologyNews={this.state.technologyNews}
+        <NewsContainer local={this.state.local} entertainment={this.state.entertainment}
+        health={this.state.health}
+        science={this.state.science}
+        technology={this.state.technology}
         category={this.state.category}
         />
       </div>

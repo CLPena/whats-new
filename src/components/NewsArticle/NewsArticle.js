@@ -5,7 +5,7 @@ const NewsArticle = (props) => {
   let currentCategory = props.category;
   let categoryArticles;
   if(currentCategory === "") {
-    categoryArticles = props.localNews;
+    categoryArticles = props.local;
   } else {
     categoryArticles = props[currentCategory];
   }
