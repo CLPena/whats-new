@@ -1,17 +1,29 @@
-import React from 'react';
-import './Menu.css'
+import React, { Component } from 'react';
+import './Menu.css';
 
-const Menu = () => {
+class Menu extends Component {
+  constructor() {
+    super();
+
+  }
+
+  handleMenuButtons = (event) => {
+    console.log(event.target.id)
+  }
+
+  render () {
     return (
       <nav className="menu">
         <h1 className="menu-header">WHAT'S NEW?</h1>
-        <button className="menu-button local-button active-button">LOCAL NEWS</button>
-        <button className="menu-button technology-button">TECHNOLOGY</button>
-        <button className="menu-button entertainment-button">ENTERTAINMENT</button>
-        <button className="menu-button science-button">SCIENCE</button>
-        <button className="menu-button health-button">HEALTH</button>
+        <button className="menu-button local-button" id="active-button" onClick={this.handleMenuButtons}>LOCAL NEWS</button>
+        <button className="menu-button" id="technology-button" onClick={this.handleMenuButtons}>TECHNOLOGY</button>
+        <button className="menu-button" id="entertainment-button" onClick={this.handleMenuButtons}>ENTERTAINMENT</button>
+        <button className="menu-button" id="science-button" onClick={this.handleMenuButtons}>SCIENCE</button>
+        <button className="menu-button" id="health-button" onClick={this.handleMenuButtons}>HEALTH</button>
       </nav>
     )
+  }
+
 };
 
 
