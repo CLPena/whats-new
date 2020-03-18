@@ -1,8 +1,14 @@
 import React from 'react';
 import './NewsArticle.css';
 
-const NewsArticle = (props, event) => {
-  return props.localNews.map(article => {
+const NewsArticle = (props, category) => {
+  let test;
+  if(category = {}) {
+    test = props.localNews
+  } else {
+    test = props[category]
+  }
+  return test.map(article => {
     return (
       <div key={article.id} className="news-article" id={article.id}>
         <h2>{article.headline}</h2>
