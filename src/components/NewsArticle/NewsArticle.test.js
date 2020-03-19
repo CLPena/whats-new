@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NewsArticle from './NewsArticle';
 import App from '../App/App';
 
 import { render } from '@testing-library/react';
