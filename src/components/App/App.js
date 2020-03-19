@@ -30,7 +30,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <SearchForm />
+        <SearchForm searchArticles={this.searchArticles}/>
         <Menu changeDisplay={this.changeDisplay}/>
         <NewsContainer local={this.state.local} entertainment={this.state.entertainment}
         health={this.state.health}
