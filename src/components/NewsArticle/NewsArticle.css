@@ -4,18 +4,24 @@ p, h2 {
 
 .news-article {
   border: 1px solid yellow;
-  margin: 10px;
   border-radius: 5px;
-  padding: 10px;
+  margin: 10px;
+  padding: 15px;
   width: 45%;
 }
 
 .article-img {
-  margin: 5px;
-  height: 100px;
-  width: auto;
+  height: auto;
+  margin: 10px;
+  width: 85%;
 }
 
 a {
   color: yellow;
+  font-size: 1.15em;
+}
+
+p {
+  font-size: 1.15em;
+  margin: 10px;
 }
