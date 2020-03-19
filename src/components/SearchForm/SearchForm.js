@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './SearchForm.css';
 
 class SearchForm extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
-      searchTerm: ''
+      searchTerm: '',
+      filteredArticles: props.filteredArticles,
+      category:''
     }
   }
 
@@ -13,16 +15,18 @@ class SearchForm extends Component {
     this.setState({searchTerm: event.target.value});
   }
 
-  searchArticles = (event) => {
+  handleSearch = (event) => {
     event.preventDefault();
-    console.log(this.state.searchTerm)
+    this.setState({category: this.props.category});
+    this.props.searchArticles(this.state.searchTerm);
+    this.setState({searchTerm: ''});
   }
 
   render () {
     return (
       <form className="search-form">
-        <input type="text" name="search" placeholder="SEARCH ARTICLES" onChange={this.handleChange}></input>
-        <button className="search-button" type="submit" onClick={this.searchArticles}></button>
+        <input type="text" name="search" placeholder="SEARCH ARTICLES" onChange={this.handleChange} value={this.state.searchTerm}></input>
+        <button className="search-button" type="submit" onClick={this.handleSearch}></button>
       </form>
     );
   }

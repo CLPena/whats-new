@@ -12,7 +12,7 @@ class Menu extends Component {
   changeCategory = (event) => {
     this.setState({category: event.target.id});
     event.preventDefault();
-    this.props.changeDisplay(event.target.id)
+    this.props.changeDisplay(event.target.id);
   }
 
   render () {

@@ -11,7 +11,9 @@ const NewsContainer = (props) => {
       health={props.health}
       science={props.science}
       technology={props.technology}
-      category={props.category}/>
+      category={props.category}
+      filteredArticles={props.filteredArticles}
+      />
     </div>
   );
 };

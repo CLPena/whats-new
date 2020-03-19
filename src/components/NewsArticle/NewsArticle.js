@@ -3,14 +3,20 @@ import './NewsArticle.css';
 
 const NewsArticle = (props) => {
   let currentCategory = props.category;
-  let categoryArticles;
+  let articles;
   if(currentCategory === "") {
-    categoryArticles = props.local;
+    articles = props.local;
   } else {
-    categoryArticles = props[currentCategory];
+    articles = props[currentCategory];
   }
 
-  return categoryArticles.map(article => {
+  if(props.filteredArticles.length > 0) {
+    articles = props.filteredArticles;
+  } else {
+    console.log('No filtered articles')
+  }
+
+  return articles.map(article => {
     return (
       <div key={article.id} className="news-article" id={article.id}>
         <h2>{article.headline}</h2>
