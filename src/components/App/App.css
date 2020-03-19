@@ -5,9 +5,9 @@
 }
 
 .app {
-  display: flex;
   background: #141527;
+  display: flex;
+  flex-flow: row wrap;
   text-align: center;
   width: 100%;
-  flex-flow: row wrap;
 }

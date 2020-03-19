@@ -1,37 +1,36 @@
 .search-form {
-  width: 80%;
-  /* height: 40px; */
-  margin-left: 20%;
-  margin-top: 15px;
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: center;
+  margin-left: 20%;
+  margin-top: 15px;
+  width: 80%;
 }
 
 input {
   border: 1px solid white;
   border-radius: 5px;
-  height: 45px;
-  width: 60%;
   font-size: 1.15em;
+  height: 45px;
   padding: 5px;
+  width: 60%;
 }
 
 .search-button {
-  background-image: url("../../assets/search.png");
   background-color: transparent;
-  background-size: 80%;
-  background-repeat: space;
+  background-image: url("../../assets/search.png");
   background-position: center;
-  height: 45px;
-  width: 45px;
-  margin: 10px;
-  border-radius: 10px;
+  background-repeat: space;
+  background-size: 80%;
   border: none;
+  border-radius: 10px;
+  height: 45px;
+  margin: 10px;
+  width: 45px;
 }
 
 .search-button:hover {
-  background-image: url("../../assets/search2.png");
   background-color: rgb(237, 237, 68);
+  background-image: url("../../assets/search2.png");
 }
