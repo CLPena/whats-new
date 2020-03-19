@@ -19,7 +19,7 @@ class Menu extends Component {
     return (
       <nav className="menu">
         <h1 className="menu-header">WHAT'S NEW?</h1>
-        <button className="menu-button active-button" id="local" onClick={this.changeCategory}>LOCAL</button>
+        <button className="menu-button" id="local" onClick={this.changeCategory}>LOCAL</button>
         <button className="menu-button" id="technology" onClick={this.changeCategory}>TECHNOLOGY</button>
         <button className="menu-button" id="entertainment" onClick={this.changeCategory}>ENTERTAINMENT</button>
         <button className="menu-button" id="science" onClick={this.changeCategory}>SCIENCE</button>

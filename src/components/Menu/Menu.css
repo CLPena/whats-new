@@ -18,11 +18,12 @@
   font-size: 1.15em;
 }
 
-.active-button, .menu-button:hover {
+.menu-button:hover {
   background: rgba(237, 237, 68, 0.65);
   color: #141527;
 }
 
 .menu-header {
   margin: 20px 0;
+  font-size: 2.2em;
 }

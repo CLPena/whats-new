@@ -4,13 +4,15 @@ h1 {
 }
 
 .news-container {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   margin: 0 0 0 20%;
   height: 100%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.news-header {
+  margin: 15px;
 }

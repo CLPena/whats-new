@@ -7,6 +7,8 @@ import technology from '../../data/technology';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
+
 
 class App extends Component {
   constructor() {
@@ -28,6 +30,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
+        <SearchForm />
         <Menu changeDisplay={this.changeDisplay}/>
         <NewsContainer local={this.state.local} entertainment={this.state.entertainment}
         health={this.state.health}
