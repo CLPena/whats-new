@@ -8,7 +8,7 @@ This is the first solo project from Mod 3 at Turing School of Software and Desig
 [Cristina Peña](https://github.com/CLPena)
 
 #### In Action
-![Gif of app](GIF HERE)
+![Gif of app](https://media.giphy.com/media/Ze8hLnZ3HBa7ZGZ0fd/giphy.gif)
 
 #### Project Next Steps
 I would love to further finesse the layout of this to be more modern and responsive. I'd also like to explore the last extension of the project, using fetch to pull from an external database of articles instead of just the dataset provided. I would also like to add more visual interest, like icons, photo galleries, videos, etc. 
