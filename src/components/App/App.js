@@ -31,9 +31,9 @@ class App extends Component {
   searchArticles = (searchTerm) => {
     let matchingArticles;
     if(this.state.category === "") {
-      matchingArticles = this.state.local.filter(article => article.headline.includes(searchTerm))
+      matchingArticles = this.state.local.filter(article => article.headline.toUpperCase().includes(searchTerm.toUpperCase()))
     } else {
-      matchingArticles = this.state[this.state.category].filter(article => article.headline.includes(searchTerm))
+      matchingArticles = this.state[this.state.category].filter(article => article.headline.toUpperCase().includes(searchTerm.toUpperCase()))
     }
     this.setState({filteredArticles: matchingArticles})
   }
