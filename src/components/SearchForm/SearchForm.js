@@ -3,10 +3,10 @@ import './SearchForm.css';
 
 const SearchForm = () => {
   return (
-    <div className="search-form">
+    <form className="search-form">
       <input placeholder="SEARCH ARTICLES"></input>
       <button class="search-button" type="submit"></button>
-    </div>
+    </form>
   );
 };
 
