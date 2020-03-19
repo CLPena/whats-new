@@ -26,7 +26,7 @@ class SearchForm extends Component {
     return (
       <form className="search-form">
         <input type="text" name="search" placeholder="SEARCH ARTICLES" onChange={this.handleChange} value={this.state.searchTerm}></input>
-        <button className="search-button" type="submit" onClick={this.handleSearch}></button>
+        <button aria-label="search-button" className="search-button" type="submit" onClick={this.handleSearch}></button>
       </form>
     );
   }
