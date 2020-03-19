@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import SearchForm from './SearchForm';
-import App from '../App/App';
 
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
@@ -30,15 +28,16 @@ describe('SearchForm', () => {
   });
 
   it('renders without crashing', () => {
-    const {getByText} = render(<SearchForm
+    const {getByPlaceholderText} = render(<SearchForm
       category="local"
       filteredArticles={articlesSample}
       searchArticles={mockSearchArticles}
       />);
+    expect(getByPlaceholderText('SEARCH ARTICLES')).toBeInTheDocument();
   });
 
   it('can search article headlines by a search term', () => {
-    const {getByLabelText, getByPlaceholderText, getByText} = render(<SearchForm
+    const {getByLabelText, getByPlaceholderText} = render(<SearchForm
       category="local"
       filteredArticles={articlesSample}
       searchArticles={mockSearchArticles}

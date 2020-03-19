@@ -1,6 +1,5 @@
 import React from 'react';
 import NewsContainer from './NewsContainer';
-import App from '../App/App';
 
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
